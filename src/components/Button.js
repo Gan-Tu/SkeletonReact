@@ -35,13 +35,19 @@ function Button({ primary, href, newTab, children }) {
         href={href}
         target={newTab ? "_blank" : null}
         rel={newTab ? "noreferrer" : null}
+        style={{ marginRight: 5 }}
       >
         {children}
       </a>
     );
   } else {
     return (
-      <button className={primary ? "button-primary" : ""}>{children}</button>
+      <button
+        className={primary ? "button-primary" : ""}
+        style={{ marginRight: 5 }}
+      >
+        {children}
+      </button>
     );
   }
 }
