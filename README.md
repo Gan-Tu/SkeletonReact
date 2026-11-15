@@ -1,38 +1,15 @@
 # SkeletonReact
 
-A simple React Skeleton Responsive CSS Boilerplate. 
+A simple React Skeleton Responsive CSS Boilerplate, refactored from http://getskeleton.com.
 
-Refactored from http://getskeleton.com.
+The example page is at https://gan-tu.github.io/SkeletonReact/.
 
-The example template page is deployed at: https://gan-tu.github.io/SkeletonReact
+## Development
 
-## Available Scripts
+Use a supported Node.js version from `package.json`, then run `yarn install --frozen-lockfile`.
 
-In the project directory, you can run:
-
-### `yarn start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn deploy`
-
-Builds the app and deploy the webpage to GitHub pages at https://gan-tu.github.io/SkeletonReact
+- `yarn start` serves the app at http://localhost:5173/SkeletonReact/.
+- `yarn test --run` runs the page test once.
+- `yarn lint` checks the source.
+- `yarn build` checks lint and writes the production site to `build/`.
+- `yarn deploy` builds and publishes `build/` to GitHub Pages.

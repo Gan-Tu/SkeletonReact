@@ -4,31 +4,28 @@
   "homepage": "https://gan-tu.github.io/SkeletonReact",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^5.14.0",
+    "@testing-library/jest-dom": "6.9.1",
     "@testing-library/react": "^12.0.0",
     "@testing-library/user-event": "^13.5.0",
     "gh-pages": "^6.3.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-scripts": "^5.0.1",
     "web-vitals": "^2.0.1"
   },
   "resolutions": {
-    "node-forge": "1.4.3",
-    "webpack-dev-middleware": "7.4.6"
+    "vite": "6.4.6"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
+    "start": "vite --host 0.0.0.0",
+    "build": "yarn lint && vite build",
+    "test": "vitest",
     "predeploy": "yarn run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "lint": "eslint src --ext .js,.jsx"
   },
   "eslintConfig": {
     "extends": [
-      "react-app",
-      "react-app/jest"
+      "react-app"
     ]
   },
   "browserslist": {
@@ -44,6 +41,14 @@
     ]
   },
   "engines": {
-    "node": ">=18.12.0"
+    "node": "^20.0.0 || ^22.0.0 || >=24.0.0"
+  },
+  "devDependencies": {
+    "vite": "^6.4.6",
+    "vitest": "^4.1.12",
+    "jsdom": "^26.1.0",
+    "@vitejs/plugin-react": "^4.7.0",
+    "eslint": "^8.57.1",
+    "eslint-config-react-app": "^7.0.1"
   }
 }
